@@ -10,12 +10,10 @@ module.exports = new EntitySchema({
       primary: true,
       generated: 'uuid',
     },
-
     createdAt: {
       type: 'timestamp',
       createDate: true,
     },
-
     total: {
       type: 'decimal',
       precision: 12,
@@ -41,7 +39,7 @@ module.exports = new EntitySchema({
       target: 'OrderItem',
       type: 'one-to-many',
       inverseSide: 'order',
-      cascade: true,
+      cascade: true, 
     },
   },
 });

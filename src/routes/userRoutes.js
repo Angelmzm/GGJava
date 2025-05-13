@@ -11,8 +11,7 @@ const router = express.Router();
 
 router.post('/register', userCreateController.register);
 router.post('/login', userCreateController.login);
-//router.put('/update/:id',  userUpdateController.update);
-router.put('/update/:id', userUpdateController.update);
+router.put('/update/:id',  userUpdateController.update);
 router.delete('/delete/:id', userDeleteController.deleteUser);
 //router.delete('/delete/:id', authenticateToken, userDeleteController.deleteUser);
 router.get('/list', userListController.list);
