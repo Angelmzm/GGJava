@@ -1,0 +1,67 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContainer {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 90vw;
+}
+
+.headerModal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+
+  }
+}
+
+.conteudoModal{
+  display: flex;
+  align-items: center ;
+  flex-direction: column;
+
+  p {
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  }
+
+}
+
+.btnConfirmar {
+  font-size: 18px;
+  width: 400px;
+  height: 45px;
+  border-radius: 60px;
+  margin-top: 30px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px;
+  align-items: center;
+  background-color: white;
+  color: #EC4A7D;
+  border: 1px solid #EC4A7D ;
+}
+
+.btnConfirmar:hover {
+  background-color: #EC4A7D;
+  color: white;
+}

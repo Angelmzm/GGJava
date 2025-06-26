@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+.btnModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    button {
+        background-color: #EC4A7D;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+.atualizarForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    input,
+    select {
+        padding: 8px;
+        border: 1px solid #EC4A7D;
+        border-radius: 4px;
+        width: 100%;
+        height: 45px;
+        max-width: 300px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    label {
+        font-size: 18px;
+        color: black;
+        font-weight: 550;
+        width: 280px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    button {
+        font-size: 20px;
+        color: white;
+        background-color: #EC4A7D;
+        width: 100%;
+        max-width: 280px;
+        height: 45px;
+        border-radius: 60px;
+        border: none;
+        margin-top: 15px;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

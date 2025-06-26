@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+.maisVendidosContainer {
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+
+
+    h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+        font-family: 'DM Serif Display', serif !important;
+        font-weight: 400;
+
+    }
+
+    .maisVendidos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+        text-align: left;
+    }
+
+    .maisVendidosProduto {
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: #fff;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .maisVendidosDetalhes {
+            margin-top: 10px;
+            font-family: 'Inter', sans-serif
+
+            p {
+                margin: 5px 0;
+                text-align: left;
+            }
+        }
+
+        .nomeMaisVendidos {
+            color: black;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .precoMaisVendidos {
+            color: #EC4A7D;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    }
+
+    .bttMaisVendidos {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #EC4A7D;
+        color: white;
+        text-decoration: none;
+        border-radius: 60px;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        cursor: pointer;
+        width: 150px;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

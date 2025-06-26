@@ -1,0 +1,57 @@
+.pedidosWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.admPedidosPage{
+
+  h1{
+    margin-bottom: 20px;
+    margin-left: 150px;
+    font-family: 'DM Serif Display', serif !important; 
+    font-weight: 400;
+    font-size: 35px;
+  }
+}
+
+.listaPedidos{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+
+}
+
+.pedidosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap: 20px;
+}
+
+.pedidoCard {
+  
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s;
+  
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  p {
+    margin: 10px ;
+    font-size: 25px;
+    
+  }
+
+  .numeroPedido{
+    color: #EC4A7D;
+    font-style: bold;
+    margin-bottom: 20px;
+  }
+}
